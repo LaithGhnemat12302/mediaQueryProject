@@ -6,7 +6,9 @@
 }
 
 body{
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
+    background-color: springgreen;
+    height: 1000px;
 }
 
 .header .container{
@@ -87,72 +89,9 @@ body{
 .header .container .buttons svg{
     display: none;
 }
-
-@media screen and (max-width: 1150px) {
-    .header .container .buttons button{
-        font-size: 12px;
-    }
-
-    .header .container .list ul li a{
-        font-size: 14px;
-    }
-}
-
-@media screen and (max-width: 1050px) {
-    .header .container .buttons{
-        width: 30%;
-    }
-}
-
-@media screen and (max-width: 720px){
-    .header .container .list ul li a{
-        font-size: 12px;
-    }
-
-    .header .container .buttons{
-        width: 35%;
-    }
-}
-
-@media screen and (max-width: 650px){
-    .header .container .list ul li a{
-        font-size: 11px;
-    }
-}
-
-@media screen and (max-width: 600px){
-    .header .container .list{
-        display: none;
-    }
-
-    .header .container .logo{
-        width: 15%;
-    }
-
-    .header .container .buttons{
-        width: 40%;
-    }
-
-    .header .container .buttons svg{
-        display: block;
-        margin: 2%;
-    }
-}
-
-@media screen and (max-width: 500px){
-    .header .container .buttons{
-        width: 50%;
-    }
-}
-
-@media screen and (max-width: 400px){
-    .header .container .buttons{
-        width: 65%;
-    }
-}
-/* ########################################## */
-/* ########################################## */
-/* ########################################## */
+/* ############################################################################################# */
+/* ############################################################################################# */
+/* ############################################################################################# */
 .hero_section{
     width: 50%;
     margin: auto;
@@ -208,11 +147,13 @@ body{
 .hero_section .container .text_container h4{
     font-size: 25px;
     white-space: nowrap;
+    text-align: center;
 }
 
 .hero_section .container .text_container p{
     font-size: 16px;
     white-space: nowrap;
+    text-align: center;
 }
 
 .hero_section .buttons{
@@ -232,6 +173,8 @@ body{
     font-size: 16px;
     width: 55%;
     white-space: nowrap;
+    border: none;
+    cursor: pointer;
 }
 
 .hero_section .buttons .view{
@@ -243,15 +186,93 @@ body{
     font-size: 16px;
     width: 40%;
     white-space: nowrap;
+    border: none;
+    cursor: pointer;
+}
+/* ############################################################################################# */
+/* ############################################################################################# */
+/* ############################################################################################# */
+.logo_container{
+    margin-top: 50px;
 }
 
+.logo_container .container{
+    width: 90%;
+    margin: auto;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.logo_container .container ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1 0 0;
+    height: 100px;
+    overflow-x: auto;
+    width: 100%;
+    padding: 10px;
+}
+
+.logo_container .container ul li{
+    width: calc(( 100% - 40px) / 7 );
+    height: 70px;
+    align-content: center;
+    border-right: 3px solid black;
+}
+
+.logo_container .container ul li:last-child{
+    border-right: 0;
+}
+
+.logo_container .container ul li a{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+/* ############################################################################################# */
+/* ############################################################################################# */
+/* ############################################################################################# */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ############################################################################################# */
+/* ############################################################################################# */
+/* ############################################################################################# */
+/* ############################################################################################# */
+/* ############################################################################################# */
+/* ############################################################################################# */
 @media screen and (max-width: 1250px){
     .hero_section .container .sub_container h2{
         font-size: 32px;
     }
 }
 
-@media screen and (max-width: 1150px){
+@media screen and (max-width: 1150px) {
+    .header .container .buttons button{
+        font-size: 12px;
+    }
+
+    .header .container .list ul li a{
+        font-size: 14px;
+    }
+
     .hero_section .container .sub_container h2{
         font-size: 28px;
     }
@@ -262,6 +283,12 @@ body{
 
     .hero_section .buttons{
         width: 70%;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .header .container .buttons{
+        width: 30%;
     }
 }
 
@@ -276,6 +303,12 @@ body{
 
     .hero_section .container .text_container p{
         white-space: wrap;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .logo_container .container ul li {
+       flex: 0 0 calc((100% - 35px) / 5);
     }
 }
 
@@ -299,13 +332,46 @@ body{
     }
 }
 
+@media screen and (max-width: 720px){
+    .header .container .list ul li a{
+        font-size: 12px;
+    }
+
+    .header .container .buttons{
+        width: 35%;
+    }
+}
+
 @media screen and (max-width: 650px){
+    .header .container .list ul li a{
+        font-size: 11px;
+    }
+
     .hero_section{
         width: 90%;
     }
 
-    .hero_section .buttons .view{
-        font-size: 12px;
+    .logo_container .container ul li {
+        flex: 0 0 calc((100% - 15px) / 3);
+     }
+}
+
+@media screen and (max-width: 600px){
+    .header .container .list{
+        display: none;
+    }
+
+    .header .container .logo{
+        width: 15%;
+    }
+
+    .header .container .buttons{
+        width: 40%;
+    }
+
+    .header .container .buttons svg{
+        display: block;
+        margin: 2%;
     }
 }
 
@@ -319,23 +385,37 @@ body{
     }
 }
 
+@media screen and (max-width: 500px){
+    .header .container .buttons{
+        width: 50%;
+    }
+}
+
 @media screen and (max-width: 450px){
     .hero_section .container .sub_container h2{
         font-size: 21px;
     }
+}
+
+@media screen and (max-width: 400px){
+    .header .container .buttons{
+        width: 65%;
+    }
+
+    .hero_section .container .sub_container h2{
+        font-size: 18px;
+    }
 
     .hero_section .buttons .explore{
         font-size: 12px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
     .hero_section .buttons .view{
         font-size: 12px;
-    }
-}
-
-@media screen and (max-width: 400px){
-    .hero_section .container .sub_container h2{
-        font-size: 18px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 }
 
@@ -352,9 +432,6 @@ body{
         font-size: 10px;
     }
 }
-
-
-
 
 
 
