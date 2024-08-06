@@ -8,7 +8,7 @@
 body{
     /* background-color: whitesmoke; */
     background-color: springgreen;
-    height: 1000px;
+    height: 2500px;
 }
 
 .header .container{
@@ -237,9 +237,34 @@ body{
 /* ############################################################################################# */
 /* ############################################################################################# */
 
+.background_img{
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    background-color: blueviolet;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../Images/backgroundImage.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 790px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
 
+.background_img svg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-
+.background_img path{
+    width: 32%;
+    height: 40%;
+}
+/* ############################################################################################# */
+/* ############################################################################################# */
+/* ############################################################################################# */
 
 
 
@@ -261,6 +286,15 @@ body{
 @media screen and (max-width: 1250px){
     .hero_section .container .sub_container h2{
         font-size: 32px;
+    }
+
+    .background_img{
+        height: 750px;
+    }
+
+    .background_img svg{
+        width: 80px;
+        height: 80px;
     }
 }
 
@@ -284,11 +318,19 @@ body{
     .hero_section .buttons{
         width: 70%;
     }
+
+    .background_img{
+        height: 700px;
+    }
 }
 
 @media screen and (max-width: 1050px) {
     .header .container .buttons{
         width: 30%;
+    }
+
+    .background_img{
+        height: 600px;
     }
 }
 
@@ -304,17 +346,34 @@ body{
     .hero_section .container .text_container p{
         white-space: wrap;
     }
+
+    .background_img{
+        height: 575px;
+    }   
 }
 
 @media screen and (max-width: 900px) {
     .logo_container .container ul li {
        flex: 0 0 calc((100% - 35px) / 5);
     }
+
+    .background_img{
+        height: 550px;
+    } 
 }
 
 @media screen and (max-width: 850px){
     .hero_section{
         width: 75%;
+    }
+
+    .background_img{
+        height: 500px;
+    } 
+
+    .background_img svg{
+        width: 75px;
+        height: 75px;
     }
 }
 
@@ -330,6 +389,11 @@ body{
     .hero_section .buttons .view{
         font-size: 14px;
     }
+
+    .background_img svg{
+        width: 65px;
+        height: 65px;
+    }
 }
 
 @media screen and (max-width: 720px){
@@ -340,6 +404,10 @@ body{
     .header .container .buttons{
         width: 35%;
     }
+
+    .background_img{
+        height: 450px;
+    } 
 }
 
 @media screen and (max-width: 650px){
@@ -354,6 +422,15 @@ body{
     .logo_container .container ul li {
         flex: 0 0 calc((100% - 15px) / 3);
      }
+
+    .background_img{
+        height: 425px;
+    } 
+
+    .background_img svg{
+        width: 60px;
+        height: 60px;
+    }
 }
 
 @media screen and (max-width: 600px){
@@ -373,6 +450,10 @@ body{
         display: block;
         margin: 2%;
     }
+
+    .background_img{
+        height: 400px;
+    } 
 }
 
 @media screen and (max-width: 550px){
@@ -389,12 +470,20 @@ body{
     .header .container .buttons{
         width: 50%;
     }
+
+    .background_img{
+        height: 350px;
+    } 
 }
 
 @media screen and (max-width: 450px){
     .hero_section .container .sub_container h2{
         font-size: 21px;
     }
+
+    .background_img{
+        height: 325px;
+    } 
 }
 
 @media screen and (max-width: 400px){
@@ -417,6 +506,10 @@ body{
         padding-top: 10px;
         padding-bottom: 10px;
     }
+
+    .background_img{
+        height: 300px;
+    } 
 }
 
 @media screen and (max-width: 350px){
@@ -431,6 +524,10 @@ body{
     .hero_section .buttons .view{
         font-size: 10px;
     }
+
+    .background_img{
+        height: 275px;
+    } 
 }
 
 
