@@ -469,13 +469,89 @@ body{
 /* ############################################################################################# */
 /* ############################################################################################# */
 
+.testimonials_section{
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+}
 
+.testimonials_section h2{
+    font-size: 36px;
+    font-weight: bold;
+}
 
+.testimonials_section .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
+.testimonials_section .container p{
+    text-wrap: wrap;
+    width: 80%;
+}
 
+.testimonials_section .container button{
+    padding: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    background-color: white;
+}
 
+.testimonials_section .testimonials{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
 
+.testimonials_section .testimonials .testimonial{
+    background-color: white;
+    width: calc((100% - 30px) / 2);
+    height: 250px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
+.testimonials_section .testimonials .testimonial p{
+    margin: 40px;
+    margin-bottom: 0;
+}
+
+.testimonials_section .testimonials .testimonial .sub_section{
+    margin: 40px;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.testimonials_section .testimonials .testimonial .sub_section .details{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.testimonials_section .testimonials .testimonial .sub_section .details span{
+    font-weight: 600;
+}
+
+.testimonials_section .testimonials .testimonial .sub_section button{
+    padding: 16px;
+    font-weight: 600;
+    border-radius: 15px;
+    border: none;
+    background-color:plum;
+}
 
 
 
@@ -588,6 +664,18 @@ body{
     .courses_section .courses .course img{
         height: 50%;
     }
+
+    .testimonials_section .testimonials .testimonial .sub_section{
+        margin: 30px;
+    }
+
+    .testimonials_section .testimonials .testimonial p{
+        margin: 30px;
+    }
+
+    .testimonials_section .testimonials .testimonial .sub_section button{
+        padding: 12px;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -670,6 +758,39 @@ body{
     .courses_section .container p{
         width: 100%;
     }
+
+    .testimonials_section .container{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .testimonials_section .container p{
+        width: 100%;
+    }
+
+    .testimonials_section .testimonials{
+        gap: 20px;
+    }
+
+    .testimonials_section .testimonials .testimonial{
+        width: calc(50% - 10px);
+        height: 280px;
+    }
+
+    .testimonials_section .testimonials .testimonial p{
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .testimonials_section .testimonials .testimonial .sub_section{
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .testimonials_section .testimonials .testimonial .sub_section button{
+        padding: 10px;
+    }
 }
 
 @media screen and (max-width: 750px){
@@ -689,6 +810,16 @@ body{
         width: 65px;
         height: 65px;
     }
+
+    .testimonials_section .testimonials .testimonial p{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .testimonials_section .testimonials .testimonial .sub_section{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
 }
 
 @media screen and (max-width: 720px){
@@ -706,6 +837,25 @@ body{
 
     .benefits_section .items .item{
         width: calc((100% - 20px) / 2);
+    }
+
+    .testimonials_section .testimonials .testimonial{
+        width: 100%;
+        height: 250px;
+    }
+
+    .testimonials_section .testimonials .testimonial p{
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+
+    .testimonials_section .testimonials .testimonial .sub_section{
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+
+    .testimonials_section .testimonials .testimonial .sub_section button{
+        padding: 16px;
     }
 }
 
@@ -846,6 +996,10 @@ body{
     .courses_section .courses .course img{
         height: 40%;
     }
+
+    .testimonials_section .testimonials .testimonial .sub_section button{
+        padding: 14px;
+    }
 }
 
 @media screen and (max-width: 450px){
@@ -897,6 +1051,10 @@ body{
         padding-top: 10px;
         padding-bottom: 10px;
     }
+
+    .testimonials_section .testimonials .testimonial .sub_section button{
+        padding: 12px;
+    }
 }
 
 @media screen and (max-width: 400px){
@@ -933,6 +1091,20 @@ body{
     .courses_section .courses .course .details .sub_container{
         gap: 8px;
     }
+
+    .testimonials_section .testimonials .testimonial{
+        height: 275px;
+    }
+
+    .testimonials_section .testimonials .testimonial p{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .testimonials_section .testimonials .testimonial .sub_section{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
 }
 
 @media screen and (max-width: 350px){
@@ -951,6 +1123,18 @@ body{
     .background_img{
         height: 275px;
     } 
+
+    .testimonials_section .testimonials .testimonial .sub_section .details span{
+        font-size: 14px;
+    }
+
+    .testimonials_section .testimonials .testimonial .sub_section button{
+        padding: 10px;
+    }
+
+    .testimonials_section h2{
+        font-size: 34px;
+    }
 }
 
 
