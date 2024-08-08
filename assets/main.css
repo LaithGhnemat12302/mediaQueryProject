@@ -552,9 +552,157 @@ body{
     border: none;
     background-color:plum;
 }
+/* ############################################################################################# */
+/* ############################################################################################# */
+/* ############################################################################################# */
 
+.pricing_section{
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+}
 
+.pricing_section h2{
+    font-size: 36px;
+    font-weight: bold;
+}
 
+.pricing_section .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.pricing_section .container p{
+    text-wrap: wrap;
+    width: 80%;
+}
+
+.pricing_section .container .sub_container{
+    padding: 10px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.pricing_section .container .sub_container button{
+    padding: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    border: 1px solid gray;
+}
+
+.pricing_section .container .sub_container .monthly{
+    background-color: rgb(230, 152, 5);
+    color: white;
+}
+
+.pricing_section .container .sub_container .yearly{
+    background-color: white;
+    color: black;
+}
+
+.pricing_section .pricing_container{
+    background-color: white;
+    margin-top: 30px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+}
+
+.pricing_section .pricing_container .status{
+    background-color: pink;
+    padding-bottom: 50px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc((100% - 30px) / 2);
+}
+
+.pricing_section .pricing_container .status h4{
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    background-color:#f9a2af;
+    width: 80%;
+    text-align: center;
+    border: 1px solid purple;
+}
+
+.pricing_section .pricing_container .status h6{
+    font-size: 55px;
+}
+
+.pricing_section .pricing_container .status h6 span{
+    font-size: 20px;
+}
+
+.pricing_section .pricing_container .status .features{
+    background-color:#f9a2af;
+    width: 80%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding-top: 30px;
+    border-radius: 15px;
+    border: 1px solid purple;
+    height: 75%;
+}
+
+.pricing_section .pricing_container .status .features h5{
+    font-size: 24px;
+}
+
+.pricing_section .pricing_container .status .features .feature{
+    background-color: pink;
+    width: 80%;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid purple;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    height: 12%;
+}
+
+.pricing_section .pricing_container .status .features .feature .true{
+    background-color: springgreen;
+}
+
+.pricing_section .pricing_container .status .features .feature .false{
+    background-color:rgb(246, 57, 57);
+}
+
+.pricing_section .pricing_container .status .features .feature p{
+    text-wrap: wrap;
+    font-size: 12px;
+    width: 80%;
+}
+
+.pricing_section .pricing_container .status .features button{
+    width: 100%;
+    background-color: white;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgb(230, 152, 5);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
 
 
 
@@ -580,6 +728,20 @@ body{
     .background_img svg{
         width: 80px;
         height: 80px;
+    }
+
+    .pricing_section .pricing_container .status .features .feature{
+        width: 85%;
+    }
+
+    .pricing_section .pricing_container .status .features .feature svg{
+        width: 30px;
+        height: 30px;
+    }
+
+    .pricing_section .container .sub_container button{
+        padding-left: 18px;
+        padding-right: 18px;
     }
 }
 
@@ -607,6 +769,24 @@ body{
     .background_img{
         height: 600px;
     }
+
+    .pricing_section .pricing_container{
+        padding: 35px;
+    }
+
+    .pricing_section .container .sub_container button{
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .pricing_section .pricing_container .status .features .feature svg{
+        width: 28px;
+        height: 28px;
+    }
+
+    .pricing_section .pricing_container .status{
+        width: calc((100% - 20px) / 2);
+    }
 }
 
 @media screen and (max-width: 1050px) {
@@ -624,6 +804,29 @@ body{
 
     .courses_section .courses .course .details .sub_container{
         gap: 10px;
+    }
+
+    .pricing_section .pricing_container{
+        padding: 30px;
+    }
+
+    .pricing_section .container .sub_container button{
+        padding-left: 12px;
+        padding-right: 12px;
+        font-size: 12px;
+    }
+
+    .pricing_section .pricing_container .status .features .feature svg{
+        width: 26px;
+        height: 26px;
+    }
+
+    .pricing_section .pricing_container .status{
+        width: calc((100% - 20px) / 2);
+    }
+
+    .pricing_section .pricing_container .status .features .feature{
+        width: 90%;
     }
 }
 
@@ -676,6 +879,31 @@ body{
     .testimonials_section .testimonials .testimonial .sub_section button{
         padding: 12px;
     }
+
+    .pricing_section .pricing_container{
+        padding: 20px;
+    }
+
+    .pricing_section .container .sub_container{
+        padding: 8px;
+    }
+
+    .pricing_section .pricing_container .status .features .feature svg{
+        width: 24px;
+        height: 24px;
+    }
+
+    .pricing_section .pricing_container .status{
+        width: calc((100% - 20px) / 2);
+    }
+
+    .pricing_section .pricing_container .status .features{
+        width: 90%;
+    }
+
+    .pricing_section .pricing_container .status h4{
+        width: 90%;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -722,6 +950,34 @@ body{
         font-size: 20px;
         padding-top: 15px;
         padding-bottom: 15px;
+    }
+
+    .pricing_section .pricing_container{
+        padding: 10px;
+    }
+
+    .pricing_section .container .sub_container button{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .pricing_section .pricing_container .status .features .feature svg{
+        width: 22px;
+        height: 22px;
+    }
+
+    .pricing_section .pricing_container .status{
+        width: calc((100% - 10px) / 2);
+    }
+
+    .pricing_section .pricing_container .status h4{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .pricing_section .pricing_container .status .features{
+        margin-top: 20px;
+        padding-top: 20px;
     }
 }
 
@@ -791,6 +1047,19 @@ body{
     .testimonials_section .testimonials .testimonial .sub_section button{
         padding: 10px;
     }
+
+    .pricing_section .pricing_container .status .features .feature p{
+        font-size: 10px;
+    }
+
+    .pricing_section .container .sub_container{
+        padding: 6px;
+    }
+
+    .pricing_section .container .sub_container button{
+        padding-left: 8px;
+        padding-right: 8px;
+    }
 }
 
 @media screen and (max-width: 750px){
@@ -819,6 +1088,37 @@ body{
     .testimonials_section .testimonials .testimonial .sub_section{
         margin-right: 10px;
         margin-left: 10px;
+    }
+
+    .pricing_section .container{
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    .pricing_section .container .sub_container{
+        padding: 10px;
+        margin: auto;
+    }
+
+    .pricing_section .container .sub_container button{
+        padding: 12px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 15px;
+    }
+
+    .pricing_section .pricing_container{
+        margin-top: 20px;
+    }
+
+    .pricing_section .pricing_container .status h6{
+        font-size: 45px;
+    }
+
+    .pricing_section .pricing_container .status .features button{
+        padding-top: 16px;
+        padding-bottom: 16px;
     }
 }
 
@@ -857,6 +1157,42 @@ body{
     .testimonials_section .testimonials .testimonial .sub_section button{
         padding: 16px;
     }
+
+    .pricing_section .pricing_container{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .pricing_section .pricing_container .status{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .pricing_section .pricing_container .status .features .feature svg{
+        width: 32px;
+        height: 32px;
+    }
+
+    .pricing_section .pricing_container .status .features .feature p{
+        font-size: 14px;
+    }
+
+    .pricing_section .pricing_container .status .features .feature{
+        width: 80%;
+    }
+
+    .pricing_section .container p{
+        width: 100%;
+    }
+
+    .pricing_section .container .sub_container{
+        padding: 8px;
+        margin: auto;
+    }
+
+    .pricing_section .pricing_container .status .features h5 {
+        font-size: 22px;
+    }
 }
 
 @media screen and (max-width: 650px){
@@ -870,7 +1206,7 @@ body{
 
     .logo_container .container ul li {
         flex: 0 0 calc((100% - 15px) / 3);
-     }
+    }
 
     .background_img{
         height: 425px;
@@ -911,6 +1247,11 @@ body{
     .courses_section .courses .course .text_container p{
         font-size: 16px;
     }
+
+    .pricing_section .pricing_container .status .features button{
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
 }
 
 @media screen and (max-width: 600px){
@@ -934,6 +1275,19 @@ body{
     .background_img{
         height: 400px;
     } 
+
+    .pricing_section .pricing_container .status .features .feature svg{
+        width: 28px;
+        height: 28px;
+    }
+
+    .pricing_section .pricing_container .status .features .feature p{
+        font-size: 12px;
+    }
+
+    .pricing_section .pricing_container .status .features h5 {
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 550px){
@@ -1000,6 +1354,14 @@ body{
     .testimonials_section .testimonials .testimonial .sub_section button{
         padding: 14px;
     }
+
+    .pricing_section .pricing_container .status .features .feature{
+        width: 90%;
+    }
+
+    .pricing_section .pricing_container .status h6 {
+        font-size: 40px;
+    }
 }
 
 @media screen and (max-width: 450px){
@@ -1055,6 +1417,15 @@ body{
     .testimonials_section .testimonials .testimonial .sub_section button{
         padding: 12px;
     }
+
+    .pricing_section .container .sub_container button{
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .pricing_section .pricing_container .status .features .feature{
+        padding: 8px;
+    }
 }
 
 @media screen and (max-width: 400px){
@@ -1105,6 +1476,23 @@ body{
         margin-right: 10px;
         margin-left: 10px;
     }
+
+    .pricing_section .pricing_container .status .features button{
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .pricing_section .container .sub_container{
+        padding: 6px;
+    }
+
+    .pricing_section .pricing_container .status .features{
+        gap: 8px;
+    }
+
+    .pricing_section .pricing_container .status .features {
+        padding-top: 15px;
+    }
 }
 
 @media screen and (max-width: 350px){
@@ -1134,6 +1522,11 @@ body{
 
     .testimonials_section h2{
         font-size: 34px;
+    }
+
+    .pricing_section .pricing_container .status .features button {
+        padding-top: 8px;
+        padding-bottom: 8px;
     }
 }
 
