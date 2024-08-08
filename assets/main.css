@@ -8,7 +8,6 @@
 body{
     /* background-color: whitesmoke; */
     background-color: pink;
-    height: 8500px;
 }
 
 .header .container{
@@ -728,10 +727,6 @@ body{
     gap: 30px;
 }
 
-/* .footer .container .left_container svg{
-    
-} */
-
 .footer .container .left_container nav{
     display: flex;
     flex-direction: column;
@@ -910,6 +905,12 @@ body{
     .pricing_section .pricing_container .status{
         width: calc((100% - 20px) / 2);
     }
+
+    .footer .container .right_container{
+        display: flex;
+        width: 55%;
+        justify-content: space-between;
+    }
 }
 
 @media screen and (max-width: 1050px) {
@@ -950,6 +951,23 @@ body{
 
     .pricing_section .pricing_container .status .features .feature{
         width: 90%;
+    }
+
+    .footer .container .right_container .home h3{
+        font-size: 22px;
+    }
+
+    .footer .container .right_container .about h3{
+        font-size: 22px;
+    }
+
+    .footer .container .right_container .profiles h3{
+        font-size: 22px;
+    }
+
+    .footer .container .right_container .profiles nav .icon{
+        width: 45px;
+        height: 45px;
     }
 }
 
@@ -1027,6 +1045,22 @@ body{
     .pricing_section .pricing_container .status h4{
         width: 90%;
     }
+
+    .footer .container .right_container .home h3{
+        font-size: 20px;
+    }
+
+    .footer .container .right_container .about h3{
+        font-size: 20px;
+    }
+
+    .footer .container .right_container .profiles h3{
+        font-size: 20px;
+    }
+
+    .footer .container .right_container .profiles nav{
+        gap: 10px;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -1101,6 +1135,36 @@ body{
     .pricing_section .pricing_container .status .features{
         margin-top: 20px;
         padding-top: 20px;
+    }
+
+    .footer .container .right_container .home h3{
+        font-size: 18px;
+    }
+
+    .footer .container .right_container .about h3{
+        font-size: 18px;
+    }
+
+    .footer .container .right_container .profiles h3{
+        font-size: 18px;
+    }
+
+    .footer .container .right_container .profiles nav{
+        gap: 8px;
+    }
+
+    .footer .container .right_container .home nav a{
+        font-size: 14px;
+    }
+
+    .footer .container .right_container .about nav a{
+        font-size: 14px;
+    }
+
+    .footer .container .right_container .profiles nav .icon{
+        width: 40px;
+        height: 40px;
+        padding: 8px;
     }
 }
 
@@ -1183,6 +1247,36 @@ body{
         padding-left: 8px;
         padding-right: 8px;
     }
+
+    .footer .container .right_container .home h3{
+        font-size: 16px;
+    }
+
+    .footer .container .right_container .about h3{
+        font-size: 16px;
+    }
+
+    .footer .container .right_container .profiles h3{
+        font-size: 16px;
+    }
+
+    .footer .container .right_container .profiles nav{
+        gap: 5px;
+    }
+
+    .footer .container .right_container .profiles nav .icon{
+        width: 35px;
+        height: 35px;
+        padding: 6px;
+    }
+
+    .footer .container .left_container nav .sub_container a{
+        font-size: 14px;
+    }
+
+    .footer{
+        padding: 30px;
+    }
 }
 
 @media screen and (max-width: 750px){
@@ -1242,6 +1336,14 @@ body{
     .pricing_section .pricing_container .status .features button{
         padding-top: 16px;
         padding-bottom: 16px;
+    }
+
+    .footer .container .right_container{
+        width: 60%;
+    }
+
+    .footer .container .left_container nav .sub_container{
+        gap: 7px;
     }
 }
 
@@ -1316,6 +1418,14 @@ body{
     .pricing_section .pricing_container .status .features h5 {
         font-size: 22px;
     }
+
+    .footer{
+        padding: 15px;
+    }
+
+    .footer p{
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width: 650px){
@@ -1374,6 +1484,67 @@ body{
     .pricing_section .pricing_container .status .features button{
         padding-top: 14px;
         padding-bottom: 14px;
+    }
+
+    .footer .container{
+        flex-wrap: wrap;
+    }
+
+    .footer .container .left_container{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .footer .container .right_container{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .footer .container .right_container .home{
+        width: calc((100% - 20px) / 2);
+        margin-bottom: 30px;
+    }
+
+    .footer .container .right_container .about{
+        width: calc((100% - 20px) / 2);
+    }
+
+    .footer .container .right_container .home h3{
+        font-size: 24px;
+    }
+
+    .footer .container .right_container .about h3{
+        font-size: 24px;
+    }
+
+    .footer .container .right_container .profiles h3{
+        font-size: 24px;
+    }
+
+    .footer .container .left_container nav .sub_container a{
+        font-size: 16px;
+    }
+
+    .footer .container .right_container .home nav a{
+        font-size: 16px;
+    }
+
+    .footer .container .right_container .about nav a{
+        font-size: 16px;
+    }
+
+    .footer .container .right_container .profiles nav .icon{
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+    }
+
+    .footer p{
+        font-size: 16px;
+    }
+
+    .footer{
+        padding: 50px;
     }
 }
 
@@ -1453,6 +1624,10 @@ body{
         padding-top: 12px;
         padding-bottom: 12px;
     }
+
+    .footer{
+        padding: 40px;
+    }
 }
 
 @media screen and (max-width: 500px){
@@ -1484,6 +1659,26 @@ body{
 
     .pricing_section .pricing_container .status h6 {
         font-size: 40px;
+    }
+
+    .footer{
+        padding: 30px;
+    }
+
+    .footer .container .right_container .home h3{
+        font-size: 22px;
+    }
+
+    .footer .container .right_container .about h3{
+        font-size: 22px;
+    }
+
+    .footer .container .right_container .profiles h3{
+        font-size: 22px;
+    }
+
+    .footer p{
+        font-size: 14px;
     }
 }
 
@@ -1548,6 +1743,26 @@ body{
 
     .pricing_section .pricing_container .status .features .feature{
         padding: 8px;
+    }
+
+    .footer .container .right_container .home nav a{
+        font-size: 14px;
+    }
+
+    .footer .container .right_container .about nav a{
+        font-size: 14px;
+    }
+
+    .footer .container .right_container .home h3{
+        font-size: 20px;
+    }
+
+    .footer .container .right_container .about h3{
+        font-size: 20px;
+    }
+
+    .footer .container .right_container .profiles h3{
+        font-size: 20px;
     }
 }
 
@@ -1616,6 +1831,28 @@ body{
     .pricing_section .pricing_container .status .features {
         padding-top: 15px;
     }
+
+    .footer .container .right_container .home h3{
+        font-size: 18px;
+    }
+
+    .footer .container .right_container .about h3{
+        font-size: 18px;
+    }
+
+    .footer .container .right_container .profiles h3{
+        font-size: 18px;
+    }
+
+    .footer .container .right_container .profiles nav .icon{
+        width: 45px;
+        height: 45px;
+        padding: 8px;
+    }
+
+    .footer .container .left_container nav .sub_container a{
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width: 350px){
@@ -1651,9 +1888,8 @@ body{
         padding-top: 8px;
         padding-bottom: 8px;
     }
+
+    .footer{
+        padding: 20px;
+    }
 }
-
-
-
-
-
