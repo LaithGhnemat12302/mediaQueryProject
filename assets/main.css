@@ -2,11 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
+    color: #59595A;
 }
 
 body{
     background-color:rgb(252, 217, 174);
+}
+
+.header{
+    background-color: #59595A;
 }
 
 .header .container{
@@ -16,7 +21,6 @@ body{
     justify-content: space-between;
     height: 60px;
     border-radius: 10px;
-    background-color: #59595A;
 }
 
 .header .container .logo{
@@ -132,37 +136,44 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3%;
     margin-top: 50px;
 }
 
 .hero_section .container{
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
 }
 
 .hero_section .container .sub_container{
     display: flex;
     justify-content: center;
-    gap: 1%;
     background-color: white;
     align-items: center;
-    padding: 2%;
+    padding: 8px;
     border-radius: 16px;
     white-space: nowrap;
-    width: 100%;
+    width: 95%;
 }
 
 .hero_section .container .sub_container svg{
-    width: 10%;
+    border-radius: 10px;
+    width: 64px;
     height: 64px;
     flex-grow: 1;
+}
+
+.hero_section .container .sub_container svg rect{
+    width: 100%;
+    height: 100%;
+    background-color:rgb(252, 217, 174);
 }
 
 .hero_section .container .sub_container h2{
     flex-grow: 1;
     font-size: 36px;
+    text-wrap: nowrap;
 }
 
 .hero_section .container .sub_container span{
@@ -170,10 +181,11 @@ body{
 }
 
 .hero_section .container .text_container{
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 3%;
+    padding: 10px;
     gap: 20px;
     width: 100%;
 }
@@ -182,6 +194,7 @@ body{
     font-size: 25px;
     white-space: nowrap;
     text-align: center;
+    width: 100%;
 }
 
 .hero_section .container .text_container p{
@@ -191,37 +204,49 @@ body{
 }
 
 .hero_section .buttons{
-    margin-top: 28px;
+    margin-top: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 60%;
+    gap: 10px;
 }
 
 .hero_section .buttons .explore{
     background-color: orange;
     color: white;
-    padding: 3%;
+    padding: 20px;
     border-radius: 10px;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 16px;
-    width: 55%;
     white-space: nowrap;
     border: none;
     cursor: pointer;
+    transition: background-color 1s, color 1s;
+}
+
+.hero_section .buttons .explore:hover{
+    background-color: white;
+    color: #59595A;
 }
 
 .hero_section .buttons .view{
     background-color: white;
-    padding: 3%;
+    padding: 20px;
     border-radius: 10px;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 16px;
-    width: 40%;
     white-space: nowrap;
     border: none;
     cursor: pointer;
+    color: #59595A;
+    transition: background-color 1s, color 1s;
+}
+
+.hero_section .buttons .view:hover{
+    background-color: orange;
+    color: white;
 }
 /* ############################################################################################# */
 /* ############################################################################################# */
@@ -890,6 +915,19 @@ body{
         font-size: 32px;
     }
 
+    .hero_section .container .sub_container svg{
+        width: 55px;
+        height: 55px;
+    }
+
+    .hero_section .buttons .explore{
+        padding: 18px;
+    }
+
+    .hero_section .buttons .view{
+        padding: 18px;
+    }
+
     .background_img{
         height: 650px;
     }
@@ -930,6 +968,19 @@ body{
 
     .hero_section .buttons{
         width: 70%;
+    }
+
+    .hero_section .buttons .explore{
+        padding: 16px;
+    }
+
+    .hero_section .buttons .view{
+        padding: 16px;
+    }
+
+    .hero_section .container .sub_container svg {
+        width: 50px;
+        height: 50px;
     }
 
     .background_img{
@@ -982,6 +1033,23 @@ body{
     .header .container .logo svg{
         width: 50px;
         height: 50px;
+    }
+    /* _______________________________ hero ________________________________ */
+
+    .hero_section .container .sub_container h2{
+        font-size: 26px;
+    }
+
+    .hero_section .container .text_container h4{
+        font-size: 20px;
+    }
+
+    .hero_section .buttons .explore {
+        padding: 14px;
+    }
+
+    .hero_section .buttons .view {
+        padding: 14px;
     }
 
     .background_img{
@@ -1038,6 +1106,7 @@ body{
 }
 
 @media screen and (max-width: 970px){
+    /* _______________________________ hero ________________________________ */
     .hero_section{
         width: 60%;
     }
@@ -1048,6 +1117,21 @@ body{
 
     .hero_section .container .text_container p{
         white-space: wrap;
+    }
+
+    .hero_section .buttons .explore {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .hero_section .buttons .view {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .hero_section .container .sub_container svg{
+        width: 45px;
+        height: 45px;
     }
 
     .background_img{
@@ -1254,9 +1338,10 @@ body{
         width: 45px;
         height: 45px;
     }
+    /* _______________________________ hero ________________________________ */
 
     .hero_section{
-        width: 75%;
+        width: 70%;
     }
 
     .background_img{
@@ -1366,16 +1451,9 @@ body{
 }
 
 @media screen and (max-width: 750px){
+    /* _______________________________ hero ________________________________ */
     .hero_section .buttons{
         width: 80%;
-    }
-
-    .hero_section .buttons .explore{
-        font-size: 14px;
-    }
-
-    .hero_section .buttons .view{
-        font-size: 14px;
     }
 
     .background_img svg{
@@ -1455,6 +1533,15 @@ body{
 
     .header .container .list ul{
         margin-left: 3px;
+    }
+    /* _______________________________ hero ________________________________ */
+
+    .hero_section .container .sub_container h2 {
+        font-size: 24px;
+    }
+
+    .hero_section .container .text_container h4 {
+        font-size: 18px;
     }
 
     .background_img{
@@ -1543,9 +1630,10 @@ body{
     .header .container .list ul li{
         height: 70%;
     }
+    /* _______________________________ hero ________________________________ */
 
     .hero_section{
-        width: 90%;
+        width: 80%;
     }
 
     .logo_container .container ul li {
@@ -1715,13 +1803,10 @@ body{
         width: 45px;
         height: 45px;
     }
-
-    .hero_section .container .sub_container h2{
-        font-size: 24px;
-    }
-
-    .hero_section .container .sub_container svg{
-        height: 50px;
+    /* _______________________________ hero ________________________________ */
+    
+    .hero_section {
+        width: 90%;
     }
 
     .courses_section .courses .course{
@@ -1762,6 +1847,11 @@ body{
 }
 
 @media screen and (max-width: 500px){
+    /* _______________________________ hero ________________________________ */
+    .hero_section .container .sub_container h2 {
+        font-size: 22px;
+    }
+
     .background_img{
         height: 350px;
     } 
@@ -1818,9 +1908,15 @@ body{
         padding-top: 14px;
         padding-bottom: 14px;
     }
+    /* _______________________________ hero ________________________________ */
 
     .hero_section .container .sub_container h2{
-        font-size: 21px;
+        font-size: 19px;
+    }
+
+    .hero_section .container .sub_container svg{
+        width: 40px;
+        height: 40px;
     }
 
     .background_img{
@@ -1912,15 +2008,24 @@ body{
         padding-top: 12px;
         padding-bottom: 12px;
     }
+    /* _______________________________ hero ________________________________ */
+
+    .hero_section .container .sub_container{
+        width: 100%;
+    }
 
     .hero_section .container .sub_container h2{
         font-size: 18px;
     }
 
+    .hero_section .buttons {
+        width: 90%;
+    }
+
     .hero_section .buttons .explore{
-        font-size: 12px;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        font-size: 13px;
+        padding-top: 11px;
+        padding-bottom: 11px;
     }
 
     .hero_section .buttons .view{
@@ -2010,17 +2115,27 @@ body{
     .header .container .buttons{
         gap: 3px;
     }
+    /* _______________________________ hero ________________________________ */
 
+    .hero_section .container .sub_container{
+        padding: 6px;
+    }
+    
     .hero_section .container .sub_container h2{
         font-size: 16px;
     }
 
+    .hero_section .container .sub_container svg{
+        width: 35px;
+        height: 35px;
+    }
+
     .hero_section .buttons .explore{
-        font-size: 10px;
+        font-size: 11px;
     }
 
     .hero_section .buttons .view{
-        font-size: 10px;
+        font-size: 11px;
     }
 
     .background_img{
