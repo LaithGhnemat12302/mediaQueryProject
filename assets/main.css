@@ -6,8 +6,7 @@
 }
 
 body{
-    /* background-color: whitesmoke; */
-    background-color: pink;
+    background-color:rgb(252, 217, 174);
 }
 
 .header .container{
@@ -16,6 +15,8 @@ body{
     display: flex;
     justify-content: space-between;
     height: 60px;
+    border-radius: 10px;
+    background-color: #59595A;
 }
 
 .header .container .logo{
@@ -26,8 +27,8 @@ body{
 }
 
 .header .container .logo svg{
-    width: 100%;
-    height: 80%;
+    width: 60px;
+    height: 60px;
 }
 
 .header .container .list{
@@ -40,7 +41,24 @@ body{
     height: 100%;
     justify-content: flex-start;
     align-items: center;
-    gap: 3%;
+    gap: 5px;
+}
+
+.header .container .list ul li{
+    padding: 10px;
+    height: 100%;
+    align-content: center;
+    border-radius: 10px;
+    transition: background-color 1s, transform 1s;
+}
+
+.header .container .list ul li:hover{
+    background-color: orange;
+    transform: scaleX(1.1);
+}
+
+.header .container .list ul li:hover a{
+    color: #59595A;
 }
 
 .header .container .list ul li a{
@@ -48,43 +66,60 @@ body{
     padding-bottom: 10px;
     font-weight: bold;
     text-transform: uppercase;
-    color: black;
+    color: orange;
     text-decoration: none;
     white-space: nowrap;
+}
+
+.header .container .list ul .home{
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color:white;
 }
 
 .header .container .buttons{
     display: flex;
     flex-wrap: nowrap;
-    /* gap: 4%; */
     width: 20%;
     justify-content: flex-end;
     align-items: center;
 }
 
 .header .container .buttons button{
-    padding: 2%;
-    margin-right: 4%;
-    font-weight: bold;
+    padding: 15px;
+    margin-right: 10px;
+    font-weight: 600;
     text-transform: uppercase;
     border: none;
     border-radius: 10px;
     white-space: nowrap;
     cursor: pointer;
-    width: 30%;
-    height: 60%;
-    font-size: 13px;
+    font-size: 16px;
 }
 
 .header .container .buttons .sign{
     background-color: white;
+    color: #59595A;
+    transition: background-color 1s, color 1s ;
+}
+
+.header .container .buttons .sign:hover{
+    background-color: orange;
+    color: white;
 }
 
 .header .container .buttons .login{
     background-color: orange;
     color: white;
+    transition: background-color 1s, color 1s ;
 }
 
+.header .container .buttons .login:hover{
+    background-color: white;
+    color: #59595A;
+}
 .header .container .buttons svg{
     display: none;
 }
@@ -835,6 +870,22 @@ body{
 /* ############################################################################################# */
 /* ############################################################################################# */
 @media screen and (max-width: 1250px){
+    /* ______________________________ header _______________________________ */
+    .header .container .buttons button{
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .header .container .logo svg{
+        width: 55px;
+        height: 55px;
+    }
+
+    .header .container .list ul li{
+        padding: 8px;
+        height: 90%;
+    }
+    /* _______________________________ hero ________________________________ */
     .hero_section .container .sub_container h2{
         font-size: 32px;
     }
@@ -864,14 +915,11 @@ body{
 }
 
 @media screen and (max-width: 1150px) {
-    .header .container .buttons button{
-        font-size: 12px;
-    }
-
+    /* ______________________________ header _______________________________ */
     .header .container .list ul li a{
         font-size: 14px;
     }
-
+    /* _______________________________ hero ________________________________ */
     .hero_section .container .sub_container h2{
         font-size: 28px;
     }
@@ -914,8 +962,26 @@ body{
 }
 
 @media screen and (max-width: 1050px) {
+    /* ______________________________ header _______________________________ */
     .header .container .buttons{
-        width: 30%;
+        width: 25%;
+    }
+
+    .header .container .logo{
+        width: 8%;
+    }
+
+    .header .container .list ul li{
+        padding-left: 6px;
+        padding-right: 6px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        height: 85%;
+    }
+
+    .header .container .logo svg{
+        width: 50px;
+        height: 50px;
     }
 
     .background_img{
@@ -1064,10 +1130,6 @@ body{
 }
 
 @media screen and (max-width: 900px) {
-    .logo_container .container ul li {
-       flex: 0 0 calc((100% - 35px) / 5);
-    }
-
     .background_img{
         height: 480px;
     } 
@@ -1169,6 +1231,30 @@ body{
 }
 
 @media screen and (max-width: 850px){
+    /* ______________________________ header _______________________________ */
+    .header .container .buttons button{
+        font-size: 12px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .header .container .list ul li{
+        height: 75%;
+    }
+
+    .header .container .list ul li a {
+        font-size: 13px;
+    }
+
+    .header .container .list ul{
+        gap: 3px;
+    }
+
+    .header .container .logo svg{
+        width: 45px;
+        height: 45px;
+    }
+
     .hero_section{
         width: 75%;
     }
@@ -1348,12 +1434,27 @@ body{
 }
 
 @media screen and (max-width: 720px){
+    /* ______________________________ header _______________________________ */
     .header .container .list ul li a{
         font-size: 12px;
     }
 
     .header .container .buttons{
-        width: 35%;
+        width: 30%;
+    }
+
+    .header .container .buttons button{
+        font-size: 11px;
+        margin-right: 5px;
+    }
+
+    .header .container .list ul li{
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+    .header .container .list ul{
+        margin-left: 3px;
     }
 
     .background_img{
@@ -1429,8 +1530,18 @@ body{
 }
 
 @media screen and (max-width: 650px){
+    /* ______________________________ header _______________________________ */
     .header .container .list ul li a{
         font-size: 11px;
+    }
+
+    .header .container .logo svg{
+        width: 40px;
+        height: 40px;
+    }
+
+    .header .container .list ul li{
+        height: 70%;
     }
 
     .hero_section{
@@ -1549,6 +1660,7 @@ body{
 }
 
 @media screen and (max-width: 600px){
+    /* ______________________________ header _______________________________ */
     .header .container .list{
         display: none;
     }
@@ -1557,13 +1669,22 @@ body{
         width: 15%;
     }
 
+    .header .container .logo svg{
+        width: 50px;
+        height: 50px;
+    }
+
     .header .container .buttons{
-        width: 40%;
+        width: 50%;
+        gap: 5px;
+    }
+
+    .header .container .buttons button{
+        font-size: 14px;
     }
 
     .header .container .buttons svg{
         display: block;
-        margin: 2%;
     }
 
     .background_img{
@@ -1585,6 +1706,16 @@ body{
 }
 
 @media screen and (max-width: 550px){
+    /* ______________________________ header _______________________________ */
+    .header .container .buttons button{
+        font-size: 13px;
+    }
+
+    .header .container .logo svg{
+        width: 45px;
+        height: 45px;
+    }
+
     .hero_section .container .sub_container h2{
         font-size: 24px;
     }
@@ -1631,10 +1762,6 @@ body{
 }
 
 @media screen and (max-width: 500px){
-    .header .container .buttons{
-        width: 50%;
-    }
-
     .background_img{
         height: 350px;
     } 
@@ -1683,6 +1810,15 @@ body{
 }
 
 @media screen and (max-width: 450px){
+    /* ______________________________ header _______________________________ */
+    .header .container .buttons button{
+        font-size: 12px;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+
     .hero_section .container .sub_container h2{
         font-size: 21px;
     }
@@ -1767,8 +1903,14 @@ body{
 }
 
 @media screen and (max-width: 400px){
+    /* ______________________________ header _______________________________ */
     .header .container .buttons{
         width: 65%;
+    }
+
+    .header .container .buttons button {
+        padding-top: 12px;
+        padding-bottom: 12px;
     }
 
     .hero_section .container .sub_container h2{
@@ -1856,6 +1998,19 @@ body{
 }
 
 @media screen and (max-width: 350px){
+    /* ______________________________ header _______________________________ */
+    .header .container .buttons button{
+        font-size: 11px;
+        padding-left: 6px;
+        padding-right: 6px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+
+    .header .container .buttons{
+        gap: 3px;
+    }
+
     .hero_section .container .sub_container h2{
         font-size: 16px;
     }
