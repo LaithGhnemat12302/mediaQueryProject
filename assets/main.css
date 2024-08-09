@@ -306,7 +306,6 @@ body{
     width: 90%;
     margin: auto;
     margin-top: 50px;
-    background-color: blueviolet;
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../Images/backgroundImage.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -933,6 +932,7 @@ body{
     .hero_section .buttons .view{
         padding: 18px;
     }
+    /* ____________________________ background _____________________________ */
 
     .background_img{
         height: 650px;
@@ -988,6 +988,7 @@ body{
         width: 50px;
         height: 50px;
     }
+    /* ____________________________ background _____________________________ */
 
     .background_img{
         height: 600px;
@@ -1057,6 +1058,7 @@ body{
     .hero_section .buttons .view {
         padding: 14px;
     }
+    /* ____________________________ background _____________________________ */
 
     .background_img{
         height: 580px;
@@ -1139,6 +1141,7 @@ body{
         width: 45px;
         height: 45px;
     }
+    /* ____________________________ background _____________________________ */
 
     .background_img{
         height: 500px;
@@ -1220,6 +1223,7 @@ body{
 }
 
 @media screen and (max-width: 900px) {
+    /* ____________________________ background _____________________________ */
     .background_img{
         height: 480px;
     } 
@@ -1354,6 +1358,7 @@ body{
     .logo_container .container ul li {
         flex: 0 0 calc((100% - 30px) / 5);
     }
+    /* ____________________________ background _____________________________ */
 
     .background_img{
         height: 460px;
@@ -1466,6 +1471,7 @@ body{
     .hero_section .buttons{
         width: 80%;
     }
+    /* ____________________________ background _____________________________ */
 
     .background_img svg{
         width: 65px;
@@ -1554,6 +1560,7 @@ body{
     .hero_section .container .text_container h4 {
         font-size: 18px;
     }
+    /* ____________________________ background _____________________________ */
 
     .background_img{
         height: 450px;
@@ -1651,6 +1658,7 @@ body{
     .logo_container .container ul li {
         flex: 0 0 calc((100% - 15px) / 3);
     }
+    /* ____________________________ background _____________________________ */
 
     .background_img{
         height: 425px;
@@ -1786,6 +1794,7 @@ body{
     .header .container .buttons svg{
         display: block;
     }
+    /* ____________________________ background _____________________________ */
 
     .background_img{
         height: 400px;
@@ -1863,6 +1872,7 @@ body{
     .hero_section .container .sub_container h2 {
         font-size: 22px;
     }
+    /* ____________________________ background _____________________________ */
 
     .background_img{
         height: 350px;
@@ -1930,6 +1940,7 @@ body{
         width: 40px;
         height: 40px;
     }
+    /* ____________________________ background _____________________________ */
 
     .background_img{
         height: 325px;
@@ -2045,6 +2056,7 @@ body{
         padding-top: 10px;
         padding-bottom: 10px;
     }
+    /* ____________________________ background _____________________________ */
 
     .background_img{
         height: 300px;
@@ -2149,9 +2161,10 @@ body{
     .hero_section .buttons .view{
         font-size: 11px;
     }
+    /* ____________________________ background _____________________________ */
 
     .background_img{
-        height: 275px;
+        height: 250px;
     } 
 
     .testimonials_section .testimonials .testimonial .sub_section .details span{
