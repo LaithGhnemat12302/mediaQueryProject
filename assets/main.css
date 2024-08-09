@@ -268,7 +268,7 @@ body{
     align-items: center;
     justify-content: space-between;
     flex: 1 0 0;
-    height: 100px;
+    height: 90px;
     overflow-x: auto;
     width: 100%;
     padding: 10px;
@@ -278,7 +278,13 @@ body{
     width: calc(( 100% - 40px) / 7 );
     height: 70px;
     align-content: center;
-    border-right: 3px solid black;
+    border-right: 3px solid;
+    transition: background-color 1s, transform 1s;
+}
+
+.logo_container .container ul li:hover{
+    background-color: rgb(252, 217, 174);
+    transform: scale(1.5);
 }
 
 .logo_container .container ul li:last-child{
@@ -288,9 +294,9 @@ body{
 .logo_container .container ul li a{
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 100%;
     width: 100%;
-    align-items: center;
 }
 /* ############################################################################################# */
 /* ############################################################################################# */
@@ -1343,6 +1349,11 @@ body{
     .hero_section{
         width: 70%;
     }
+    /* _______________________________ logo ________________________________ */
+
+    .logo_container .container ul li {
+        flex: 0 0 calc((100% - 30px) / 5);
+    }
 
     .background_img{
         height: 460px;
@@ -1635,6 +1646,7 @@ body{
     .hero_section{
         width: 80%;
     }
+    /* _______________________________ logo ________________________________ */
 
     .logo_container .container ul li {
         flex: 0 0 calc((100% - 15px) / 3);
@@ -2120,7 +2132,7 @@ body{
     .hero_section .container .sub_container{
         padding: 6px;
     }
-    
+
     .hero_section .container .sub_container h2{
         font-size: 16px;
     }
