@@ -387,6 +387,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    cursor: pointer;
     height: 370px;
     transition: background-color 1s, transform 1s, color 1s;
 }
@@ -441,6 +442,7 @@ body{
     border-radius: 10px;
     border: none;
     margin-bottom: 10px;
+    cursor: pointer;
     transition: background-color 1s, fill 1s;
 }
 
@@ -460,7 +462,6 @@ body{
 
 .courses_section h2{
     font-size: 36px;
-    font-weight: bold;
 }
 
 .courses_section .container{
@@ -477,14 +478,19 @@ body{
 }
 
 .courses_section .container button{
-    padding: 12px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 12px 20px;
     border-radius: 10px;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 16px;
     border: none;
     background-color: white;
+    cursor: pointer;
+    transition: background-color 1s, color 1s;
+}
+
+.courses_section .container button:hover{
+    background-color: #59595A;
+    color: orange;
 }
 
 .courses_section .courses{
@@ -506,6 +512,24 @@ body{
     flex-direction: column;
     justify-content: space-between;
     height: 550px;
+    cursor: pointer;
+    transition: background-color 1s, color 1s, border 1s;
+}
+
+.courses_section .courses .course:hover{
+    background-color: #59595A;
+    transform: scale(1.05);
+}
+
+.courses_section .courses .course:hover .details .sub_container span,
+.courses_section .courses .course:hover .details h5,
+.courses_section .courses .course:hover .text_container h5,
+.courses_section .courses .course:hover .text_container p{
+    color: orange;
+}
+
+.courses_section .courses .course:hover .details .sub_container span{
+    border: 2px solid orange;
 }
 
 .courses_section .courses .course img{
@@ -517,7 +541,6 @@ body{
     width: 100%;
     display: flex;
     align-items: center;
-    display: flex;
     justify-content: space-between;
 }
 
@@ -527,15 +550,14 @@ body{
 }
 
 .courses_section .courses .course .details .sub_container span{
-    border: 1px solid black;
+    border: 2px solid #59595A;
     padding: 10px;
     border-radius: 10px;
     font-size: 14px;
 }
 
 .courses_section .courses .course .details h5{
-    font-size: 16px;
-    font-weight: 600;   
+    font-size: 16px;  
 }
 
 .courses_section .courses .course .text_container{
@@ -549,13 +571,19 @@ body{
 }
 
 .courses_section .courses .course button{
-    background-color: bisque;
+    background-color: orange;
     font-size: 16px;
     font-weight: 600;
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 10px;
+    cursor: pointer;
     border: none;
+    transition: background-color 1s;
+}
+
+.courses_section .courses .course button:hover{
+    background-color: rgb(252, 217, 174);
 }
 /* ############################################################################################# */
 /* ############################################################################################# */
@@ -1021,6 +1049,11 @@ body{
     .background_img{
         height: 600px;
     }
+    /* _____________________________ courses _______________________________ */
+
+    .courses_section .courses .course .details .sub_container{
+        gap: 10px;
+    }
 
     .pricing_section .pricing_container{
         padding: 35px;
@@ -1091,13 +1124,14 @@ body{
     .background_img{
         height: 580px;
     }
+    /* _____________________________ courses _______________________________ */
 
     .courses_section .courses .course{
         padding: 30px;
     }
 
-    .courses_section .courses .course .details .sub_container{
-        gap: 10px;
+    .courses_section .courses .course .details .sub_container span{
+        padding: 8px;
     }
 
     .pricing_section .pricing_container{
@@ -1179,6 +1213,7 @@ body{
     .benefits_section .items .item{
         width: calc((100% - 30px) / 2);
     }
+    /* _____________________________ courses _______________________________ */
 
     .courses_section .courses{
         gap: 10px;
@@ -1191,10 +1226,6 @@ body{
 
     .courses_section .courses .course .details h5{
         font-size: 15px;
-    }
-
-    .courses_section .courses .course img{
-        height: 50%;
     }
 
     .testimonials_section .testimonials .testimonial .sub_section{
@@ -1257,43 +1288,6 @@ body{
         height: 480px;
     } 
 
-    .courses_section .courses .course{
-        width: 100%;
-        height: 700px;
-        padding: 30px;
-    }
-
-    .courses_section .courses .course .details .sub_container{
-        gap: 20px;
-    }
-
-    .courses_section .courses .course img{
-        height: 50%;
-    }
-
-    .courses_section .courses .course .details .sub_container span{
-        font-size: 20px;
-        border: 2px solid black;
-    }
-
-    .courses_section .courses .course .details h5{
-        font-size: 22px;
-    }
-
-    .courses_section .courses .course .text_container h5{
-        font-size: 22px;
-    }
-
-    .courses_section .courses .course .text_container p{
-        font-size: 18px;
-    }
-
-    .courses_section .courses .course button{
-        font-size: 20px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
-
     .pricing_section .pricing_container{
         padding: 10px;
     }
@@ -1320,6 +1314,15 @@ body{
     .pricing_section .pricing_container .status .features{
         margin-top: 20px;
         padding-top: 20px;
+    }
+    /* _____________________________ courses _______________________________ */
+
+    .courses_section .courses .course .details .sub_container{
+        gap: 5px;
+    }
+
+    .courses_section .courses .course .details .sub_container span {
+        padding: 5px;
     }
 
     .footer .container .right_container .home h3{
@@ -1408,6 +1411,7 @@ body{
     .benefits_section .container p{
         width: 100%;
     }
+    /* _____________________________ courses _______________________________ */
 
     .courses_section .container{
         flex-direction: column;
@@ -1417,6 +1421,19 @@ body{
 
     .courses_section .container p{
         width: 100%;
+    }
+
+    .courses_section .courses .course .details h5 {
+        font-size: 14px;
+    }
+
+    .courses_section .courses .course img{
+        height: 45%;
+    }
+
+    .courses_section .courses .course {
+        padding: 10px;
+        height: 500px;
     }
 
     .testimonials_section .container{
@@ -1506,6 +1523,41 @@ body{
     .background_img svg{
         width: 65px;
         height: 65px;
+    }
+    /* _____________________________ courses _______________________________ */
+
+    .courses_section .courses .course{
+        width: 100%;
+        height: 540px;
+        padding: 30px;
+    }
+
+    .courses_section .courses .course .details .sub_container{
+        gap: 10px;
+    }
+
+    .courses_section .courses .course .details .sub_container span{
+        font-size: 20px;
+        border: 2px solid #59595A;
+        padding: 8px;
+    }
+
+    .courses_section .courses .course .details h5{
+        font-size: 22px;
+    }
+
+    .courses_section .courses .course .text_container h5{
+        font-size: 22px;
+    }
+
+    .courses_section .courses .course .text_container p{
+        font-size: 18px;
+    }
+
+    .courses_section .courses .course button{
+        font-size: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
 
     .testimonials_section .testimonials .testimonial p{
@@ -1699,16 +1751,7 @@ body{
         width: 60px;
         height: 60px;
     }
-
-    .courses_section .courses .course{
-        width: 100%;
-        height: 700px;
-        padding: 20px;
-    }
-
-    .courses_section .courses .course .details .sub_container{
-        gap: 10px;
-    }
+    /* _____________________________ courses _______________________________ */
 
     .courses_section .courses .course .details .sub_container span{
         font-size: 18px;
@@ -1724,6 +1767,12 @@ body{
 
     .courses_section .courses .course .text_container p{
         font-size: 16px;
+    }
+
+    .courses_section .courses .course button{
+        font-size: 18px;
+        padding-top: 13px;
+        padding-bottom: 13px;
     }
 
     .pricing_section .pricing_container .status .features button{
@@ -1825,6 +1874,11 @@ body{
     .background_img{
         height: 400px;
     } 
+    /* _____________________________ courses _______________________________ */
+
+    .courses_section .courses .course{
+        padding: 20px;
+    }
 
     .pricing_section .pricing_container .status .features .feature svg{
         width: 28px;
@@ -1865,10 +1919,9 @@ body{
     .benefits_section .items .item:hover{
         transform: scale(1.05);
     }
+    /* _____________________________ courses _______________________________ */
 
     .courses_section .courses .course{
-        width: 100%;
-        height: 650px;
         padding: 10px;
     }
 
@@ -1888,12 +1941,7 @@ body{
         font-size: 18px;
     }
 
-    .courses_section .courses .course .text_container p{
-        font-size: 16px;
-    }
-
     .courses_section .courses .course button{
-        font-size: 18px;
         padding-top: 12px;
         padding-bottom: 12px;
     }
@@ -1913,11 +1961,14 @@ body{
     .background_img{
         height: 350px;
     } 
+    /* _____________________________ courses _______________________________ */
 
     .courses_section .courses .course{
-        width: 100%;
-        height: 550px;
-        padding: 10px;
+        height: 480px;
+    }
+
+    .courses_section .courses .course button{
+        font-size: 16px;
     }
 
     .courses_section .courses .course img{
@@ -1987,8 +2038,14 @@ body{
         height: 330px;
     }
 
-    .courses_section .courses .course{
-        height: 500px;
+    .benefits_section .container button{
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+    /* _____________________________ courses _______________________________ */
+
+    .courses_section .courses .course img{
+        height: 45%;
     }
 
     .courses_section .courses .course .details{
@@ -2003,7 +2060,7 @@ body{
 
     .courses_section .courses .course .details .sub_container span{
         font-size: 14px;
-        border: 1px solid black;
+        padding: 6px;
     }
 
     .courses_section .courses .course .details h5{
@@ -2018,12 +2075,11 @@ body{
         font-size: 14px;
     }
 
-    .courses_section .courses .course button{
-        font-size: 16px;
-        padding-top: 10px;
-        padding-bottom: 10px;
+    .courses_section .container button{
+        padding-left: 18px;
+        padding-right: 18px;
     }
-
+    
     .testimonials_section .testimonials .testimonial .sub_section button{
         padding: 12px;
     }
@@ -2098,15 +2154,36 @@ body{
     .background_img{
         height: 300px;
     } 
+    /* _____________________________ benefits ______________________________ */
+
+    .benefits_section .container button{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .benefits_section .items .item button{
+        width: 45px;
+        height: 45px;
+    }
+    /* _____________________________ courses _______________________________ */
 
     .courses_section .courses .course button{
-        font-size: 14px;
+        font-size: 13px;
         padding-top: 10px;
         padding-bottom: 10px;
     }
 
     .courses_section .courses .course .details .sub_container{
         gap: 8px;
+    }
+
+    .courses_section .container button{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .courses_section .courses .course img {
+        height: 40%;
     }
 
     .testimonials_section .testimonials .testimonial{
@@ -2203,6 +2280,11 @@ body{
     .background_img{
         height: 250px;
     } 
+    /* _____________________________ courses _______________________________ */
+
+    .courses_section .courses .course img{
+        height: 35%;
+    }
 
     .testimonials_section .testimonials .testimonial .sub_section .details span{
         font-size: 14px;
