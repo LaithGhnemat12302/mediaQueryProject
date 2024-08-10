@@ -338,7 +338,6 @@ body{
 
 .benefits_section h2{
     font-size: 36px;
-    font-weight: bold;
 }
 
 .benefits_section .container{
@@ -355,14 +354,19 @@ body{
 }
 
 .benefits_section .container button{
-    padding: 12px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 12px 20px;
     border-radius: 10px;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 16px;
     border: none;
     background-color: white;
+    cursor: pointer;
+    transition: background-color 1s, color 1s;
+}
+
+.benefits_section .container button:hover{
+    background-color: #59595A;
+    color: orange;
 }
 
 .benefits_section .items{
@@ -383,8 +387,24 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 20px;
     height: 370px;
+    transition: background-color 1s, transform 1s, color 1s;
+}
+
+.benefits_section .items .item:hover{
+    background-color: #59595A;
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+.benefits_section .items .item:hover h3, 
+.benefits_section .items .item:hover h5, 
+.benefits_section .items .item:hover p{
+    color: orange;
+}
+
+.benefits_section .items .item:hover button{
+    background-color: white;
 }
 
 .benefits_section .items .item h3{
@@ -413,12 +433,20 @@ body{
 }
 
 .benefits_section .items .item button{
+    background-color:#59595A;
+    fill: orange;
     width: 50px;
     height: 50px;
     text-align: center;
     border-radius: 10px;
     border: none;
     margin-bottom: 10px;
+    transition: background-color 1s, fill 1s;
+}
+
+.benefits_section .items .item button:hover{
+    background-color: orange;
+    fill: white;
 }
 /* ############################################################################################# */
 /* ############################################################################################# */
@@ -1146,6 +1174,7 @@ body{
     .background_img{
         height: 500px;
     }
+    /* _____________________________ benifits ______________________________ */
     
     .benefits_section .items .item{
         width: calc((100% - 30px) / 2);
@@ -1368,6 +1397,7 @@ body{
         width: 75px;
         height: 75px;
     }
+    /* _____________________________ benefits ______________________________ */
 
     .benefits_section .container{
         flex-direction: column;
@@ -1565,6 +1595,7 @@ body{
     .background_img{
         height: 450px;
     } 
+    /* _____________________________ benefits ______________________________ */
 
     .benefits_section .items .item{
         width: calc((100% - 20px) / 2);
@@ -1667,11 +1698,6 @@ body{
     .background_img svg{
         width: 60px;
         height: 60px;
-    }
-
-    .benefits_section .items .item{
-        width: 100%;
-        height: 300px;
     }
 
     .courses_section .courses .course{
@@ -1829,6 +1855,16 @@ body{
     .hero_section {
         width: 90%;
     }
+    /* _____________________________ benefits ______________________________ */
+
+    .benefits_section .items .item{
+        width: 100%;
+        height: 300px;
+    }
+
+    .benefits_section .items .item:hover{
+        transform: scale(1.05);
+    }
 
     .courses_section .courses .course{
         width: 100%;
@@ -1945,6 +1981,7 @@ body{
     .background_img{
         height: 325px;
     } 
+    /* _____________________________ benefits ______________________________ */
 
     .benefits_section .items .item{
         height: 330px;
