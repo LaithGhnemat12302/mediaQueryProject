@@ -354,8 +354,8 @@ body{
 }
 
 .benefits_section .container button{
-    padding: 12px 20px;
-    border-radius: 10px;
+    padding: 12px 14px;
+    border-radius: 7px;
     font-weight: bold;
     font-size: 16px;
     border: none;
@@ -478,8 +478,8 @@ body{
 }
 
 .courses_section .container button{
-    padding: 12px 20px;
-    border-radius: 10px;
+    padding: 12px 14px;
+    border-radius: 7px;
     font-weight: bold;
     font-size: 16px;
     border: none;
@@ -615,8 +615,8 @@ body{
 }
 
 .testimonials_section .container button{
-    padding: 12px 20px;
-    border-radius: 10px;
+    padding: 12px 14px;
+    border-radius: 7px;
     font-weight: bold;
     font-size: 16px;
     border: none;
@@ -697,7 +697,7 @@ body{
 .testimonials_section .testimonials .testimonial .sub_section button{
     padding: 16px;
     font-weight: 600;
-    border-radius: 15px;
+    border-radius: 10px;
     border: none;
     background-color:orange;
     cursor: pointer;
@@ -1084,12 +1084,25 @@ body{
     .background_img{
         height: 600px;
     }
+    /* _____________________________ benefits ______________________________ */
+
+    .benefits_section .container button{
+        font-size: 15px;
+    }
     /* _____________________________ courses _______________________________ */
+
+    .courses_section .container button{
+        font-size: 15px;
+    }
 
     .courses_section .courses .course .details .sub_container{
         gap: 10px;
     }
     /* ___________________________ testimonials ____________________________ */
+
+    .testimonials_section .container button{
+        font-size: 15px;
+    }
 
     .testimonials_section .testimonials .testimonial{
         height: 280px;
@@ -1262,11 +1275,19 @@ body{
         height: 500px;
     }
     /* _____________________________ benifits ______________________________ */
+
+    .benefits_section .container button{
+        font-size: 14px;
+    }
     
     .benefits_section .items .item{
         width: calc((100% - 30px) / 2);
     }
     /* _____________________________ courses _______________________________ */
+
+    .courses_section .container button{
+        font-size: 14px;
+    }
 
     .courses_section .courses{
         gap: 10px;
@@ -1281,6 +1302,10 @@ body{
         font-size: 15px;
     }
     /* ___________________________ testimonials ____________________________ */
+
+    .testimonials_section .container button{
+        font-size: 14px;
+    }
 
     .testimonials_section .testimonials .testimonial .sub_section button{
         padding: 12px;
@@ -2240,8 +2265,9 @@ body{
     /* _____________________________ benefits ______________________________ */
 
     .benefits_section .container button{
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 13px;
+        padding-right: 13px;
+        font-size: 13px;
     }
 
     .benefits_section .items .item button{
@@ -2261,8 +2287,9 @@ body{
     }
 
     .courses_section .container button{
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 13px;
+        padding-right: 13px;
+        font-size: 13px;
     }
 
     .courses_section .courses .course img {
@@ -2271,8 +2298,9 @@ body{
     /* ___________________________ testimonials ____________________________ */
 
     .testimonials_section .container button{
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 13px;
+        padding-right: 13px;
+        font-size: 13px;
     }
 
     .testimonials_section .testimonials .testimonial{
@@ -2409,8 +2437,6 @@ body{
         padding: 12px 8px;
         border-radius: 10px;
     }
-
-    
 
     .pricing_section .pricing_container .status .features button {
         padding-top: 8px;
