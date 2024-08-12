@@ -719,7 +719,6 @@ body{
 
 .pricing_section h2{
     font-size: 36px;
-    font-weight: bold;
 }
 
 .pricing_section .container{
@@ -742,23 +741,27 @@ body{
 }
 
 .pricing_section .container .sub_container button{
-    padding: 12px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 16px 20px;
     border-radius: 10px;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 16px;
     border: 1px solid gray;
+    cursor: pointer;
+    transition: background-color 1s, color 1s;
+}
+
+.pricing_section .container .sub_container button:hover{
+    background-color: #59595A;
+    color: orange;
 }
 
 .pricing_section .container .sub_container .monthly{
-    background-color: rgb(230, 152, 5);
+    background-color: orange;
     color: white;
 }
 
 .pricing_section .container .sub_container .yearly{
     background-color: white;
-    color: black;
 }
 
 .pricing_section .pricing_container{
@@ -771,13 +774,32 @@ body{
 }
 
 .pricing_section .pricing_container .status{
-    background-color: pink;
-    padding-bottom: 50px;
+    background-color: rgb(252, 217, 174);
+    padding-bottom: 30px;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: calc((100% - 30px) / 2);
+    border: 4px solid #59595A;
+    height: 1000px;
+    transition: background-color 1s, color 1s, border 1s, transform 1s;
+}
+
+.pricing_section .pricing_container .status:hover{
+    background-color: #59595A;
+    border: 4px solid orange;
+    transform: scale(1.05);
+    z-index: 1;
+}
+
+.pricing_section .pricing_container .status:hover h6,
+.pricing_section .pricing_container .status:hover h6 span{
+    color: orange;
+}
+
+.pricing_section .pricing_container .status:hover .features{
+    background-color: orange;
 }
 
 .pricing_section .pricing_container .status h4{
@@ -787,10 +809,10 @@ body{
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 10px;
-    background-color:#f9a2af;
+    background-color: white;
     width: 80%;
     text-align: center;
-    border: 1px solid purple;
+    border: 3px solid #59595A;
 }
 
 .pricing_section .pricing_container .status h6{
@@ -802,7 +824,7 @@ body{
 }
 
 .pricing_section .pricing_container .status .features{
-    background-color:#f9a2af;
+    background-color: white;
     width: 80%;
     margin-top: 30px;
     display: flex;
@@ -812,8 +834,9 @@ body{
     gap: 15px;
     padding-top: 30px;
     border-radius: 15px;
-    border: 1px solid purple;
-    height: 75%;
+    border: 3px solid #59595A;
+    height: 80%;
+    transition: background-color 1s;
 }
 
 .pricing_section .pricing_container .status .features h5{
@@ -821,42 +844,58 @@ body{
 }
 
 .pricing_section .pricing_container .status .features .feature{
-    background-color: pink;
+    background-color: rgb(252, 217, 174);
     width: 80%;
     padding: 10px;
     border-radius: 15px;
-    border: 1px solid purple;
+    border: 2px solid #59595A;
     display: flex;
     gap: 5px;
     align-items: center;
     height: 12%;
 }
 
+.pricing_section .pricing_container .status .features .feature:hover{
+    background-color: white;
+    transform: scale(1.2);
+    z-index: 1;
+}
+
 .pricing_section .pricing_container .status .features .feature .true{
     background-color: springgreen;
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
 }
 
 .pricing_section .pricing_container .status .features .feature .false{
     background-color:rgb(246, 57, 57);
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
 }
 
 .pricing_section .pricing_container .status .features .feature p{
     text-wrap: wrap;
-    font-size: 12px;
+    font-size: 16px;
     width: 80%;
 }
 
 .pricing_section .pricing_container .status .features button{
     width: 100%;
-    background-color: white;
     padding-top: 18px;
     padding-bottom: 18px;
-    border-radius: 15px;
-    border: none;
-    background-color: rgb(230, 152, 5);
-    color: white;
-    font-size: 16px;
+    border-radius: 10px;
+    background-color: rgb(252, 217, 174);
+    color: #59595A;
+    font-size: 18px;
     font-weight: 600;
+    border: 2px solid #59595A;
+    transition: background-color 1s;
+}
+
+.pricing_section .pricing_container .status .features button:hover{
+    background-color: white;
 }
 /* ############################################################################################# */
 /* ############################################################################################# */
