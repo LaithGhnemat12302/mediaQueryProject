@@ -519,6 +519,7 @@ body{
 .courses_section .courses .course:hover{
     background-color: #59595A;
     transform: scale(1.05);
+    z-index: 1;
 }
 
 .courses_section .courses .course:hover .details .sub_container span,
@@ -597,7 +598,6 @@ body{
 
 .testimonials_section h2{
     font-size: 36px;
-    font-weight: bold;
 }
 
 .testimonials_section .container{
@@ -606,6 +606,7 @@ body{
     align-items: center;
     padding-top: 10px;
     padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .testimonials_section .container p{
@@ -614,14 +615,19 @@ body{
 }
 
 .testimonials_section .container button{
-    padding: 12px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 12px 20px;
     border-radius: 10px;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 16px;
     border: none;
     background-color: white;
+    cursor: pointer;
+    transition: background-color 1s, color 1s;
+}
+
+.testimonials_section .container button:hover{
+    background-color: #59595A;
+    color: orange;
 }
 
 .testimonials_section .testimonials{
@@ -629,22 +635,45 @@ body{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 20px;
 }
 
 .testimonials_section .testimonials .testimonial{
     background-color: white;
-    width: calc((100% - 30px) / 2);
+    width: calc((100% - 20px) / 2);
     height: 250px;
     border-radius: 15px;
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: background-color 1s, color 1s, transform 1s;
+}
+
+.testimonials_section .testimonials .testimonial:hover{
+    background-color: #59595A;
+    transform: scale(1.05);
+    z-index: 1;
+}
+
+.testimonials_section .testimonials .testimonial:hover p,
+.testimonials_section .testimonials .testimonial:hover .sub_section .details span{
+    color: orange;
+}
+
+.testimonials_section .testimonials .testimonial:hover hr{
+    background-color: orange;
 }
 
 .testimonials_section .testimonials .testimonial p{
     margin: 40px;
     margin-bottom: 0;
+}
+
+.testimonials_section .testimonials .testimonial hr{
+    background-color: #59595A;
+    height: 1px;
+    border: none;
 }
 
 .testimonials_section .testimonials .testimonial .sub_section{
@@ -670,7 +699,13 @@ body{
     font-weight: 600;
     border-radius: 15px;
     border: none;
-    background-color:plum;
+    background-color:orange;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+.testimonials_section .testimonials .testimonial .sub_section button:hover{
+    background-color: rgb(252, 217, 174);
 }
 /* ############################################################################################# */
 /* ############################################################################################# */
@@ -1054,6 +1089,15 @@ body{
     .courses_section .courses .course .details .sub_container{
         gap: 10px;
     }
+    /* ___________________________ testimonials ____________________________ */
+
+    .testimonials_section .testimonials .testimonial{
+        height: 280px;
+    }
+
+    .testimonials_section .testimonials .testimonial .sub_section button{
+        padding: 15px;
+    }
 
     .pricing_section .pricing_container{
         padding: 35px;
@@ -1132,6 +1176,15 @@ body{
 
     .courses_section .courses .course .details .sub_container span{
         padding: 8px;
+    }
+    /* ___________________________ testimonials ____________________________ */
+
+    .testimonials_section .testimonials .testimonial .sub_section{
+        margin: 30px;
+    }
+
+    .testimonials_section .testimonials .testimonial p{
+        margin: 30px;
     }
 
     .pricing_section .pricing_container{
@@ -1227,17 +1280,14 @@ body{
     .courses_section .courses .course .details h5{
         font-size: 15px;
     }
-
-    .testimonials_section .testimonials .testimonial .sub_section{
-        margin: 30px;
-    }
-
-    .testimonials_section .testimonials .testimonial p{
-        margin: 30px;
-    }
+    /* ___________________________ testimonials ____________________________ */
 
     .testimonials_section .testimonials .testimonial .sub_section button{
         padding: 12px;
+    }
+
+    .testimonials_section .testimonials .testimonial {
+        height: 270px;
     }
 
     .pricing_section .pricing_container{
@@ -1435,6 +1485,7 @@ body{
         padding: 10px;
         height: 500px;
     }
+    /* ___________________________ testimonials ____________________________ */
 
     .testimonials_section .container{
         flex-direction: column;
@@ -1446,18 +1497,10 @@ body{
         width: 100%;
     }
 
-    .testimonials_section .testimonials{
-        gap: 20px;
-    }
-
-    .testimonials_section .testimonials .testimonial{
-        width: calc(50% - 10px);
-        height: 280px;
-    }
-
     .testimonials_section .testimonials .testimonial p{
         margin-right: 20px;
         margin-left: 20px;
+        font-size: 14px;
     }
 
     .testimonials_section .testimonials .testimonial .sub_section{
@@ -1466,7 +1509,8 @@ body{
     }
 
     .testimonials_section .testimonials .testimonial .sub_section button{
-        padding: 10px;
+        padding: 14px 8px;
+        border-radius: 12px;
     }
 
     .pricing_section .pricing_container .status .features .feature p{
@@ -1559,15 +1603,10 @@ body{
         padding-top: 15px;
         padding-bottom: 15px;
     }
+    /* ___________________________ testimonials ____________________________ */
 
-    .testimonials_section .testimonials .testimonial p{
-        margin-right: 10px;
-        margin-left: 10px;
-    }
-
-    .testimonials_section .testimonials .testimonial .sub_section{
-        margin-right: 10px;
-        margin-left: 10px;
+    .testimonials_section .testimonials .testimonial .sub_section .details{
+        gap: 5px;
     }
 
     .pricing_section .container{
@@ -1652,24 +1691,24 @@ body{
     .benefits_section .items .item{
         width: calc((100% - 20px) / 2);
     }
+    /* ___________________________ testimonials ____________________________ */
+
+    .testimonials_section .testimonials{
+        gap: 10px;
+    }
 
     .testimonials_section .testimonials .testimonial{
-        width: 100%;
-        height: 250px;
+        width: calc((100% - 10px) / 2);
     }
 
     .testimonials_section .testimonials .testimonial p{
-        margin-right: 30px;
-        margin-left: 30px;
+        margin-right: 10px;
+        margin-left: 10px;
     }
 
     .testimonials_section .testimonials .testimonial .sub_section{
-        margin-right: 30px;
-        margin-left: 30px;
-    }
-
-    .testimonials_section .testimonials .testimonial .sub_section button{
-        padding: 16px;
+        margin-right: 10px;
+        margin-left: 10px;
     }
 
     .pricing_section .pricing_container{
@@ -1773,6 +1812,31 @@ body{
         font-size: 18px;
         padding-top: 13px;
         padding-bottom: 13px;
+    }
+    /* ___________________________ testimonials ____________________________ */
+
+    .testimonials_section .testimonials .testimonial{
+        width: 100%;
+        height: 230px;
+    }
+
+    .testimonials_section .testimonials .testimonial p{
+        margin-right: 25px;
+        margin-left: 25px;
+        font-size: 16px;
+    }
+
+    .testimonials_section .testimonials .testimonial .sub_section{
+        margin-right: 25px;
+        margin-left: 25px;
+    }
+
+    .testimonials_section .testimonials .testimonial .sub_section button{
+        padding: 16px 10px;
+    }
+
+    .testimonials_section .testimonials .testimonial .sub_section .details{
+        gap: 10px;
     }
 
     .pricing_section .pricing_container .status .features button{
@@ -1879,6 +1943,12 @@ body{
     .courses_section .courses .course{
         padding: 20px;
     }
+    /* ___________________________ testimonials ____________________________ */
+
+    .testimonials_section .testimonials .testimonial{
+        width: 100%;
+        height: 250px;
+    }
 
     .pricing_section .pricing_container .status .features .feature svg{
         width: 28px;
@@ -1974,9 +2044,16 @@ body{
     .courses_section .courses .course img{
         height: 40%;
     }
+    /* ___________________________ testimonials ____________________________ */
 
-    .testimonials_section .testimonials .testimonial .sub_section button{
-        padding: 14px;
+    .testimonials_section .testimonials .testimonial p{
+        margin: 20px;
+        font-size: 15px;
+    }
+
+    .testimonials_section .testimonials .testimonial .sub_section{
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .pricing_section .pricing_container .status .features .feature{
@@ -2079,9 +2156,15 @@ body{
         padding-left: 18px;
         padding-right: 18px;
     }
+    /* ___________________________ testimonials ____________________________ */
+
+    .testimonials_section .container button{
+        padding-left: 18px;
+        padding-right: 18px;
+    }
     
     .testimonials_section .testimonials .testimonial .sub_section button{
-        padding: 12px;
+        font-size: 12px;
     }
 
     .pricing_section .container .sub_container button{
@@ -2185,19 +2268,37 @@ body{
     .courses_section .courses .course img {
         height: 40%;
     }
+    /* ___________________________ testimonials ____________________________ */
+
+    .testimonials_section .container button{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 
     .testimonials_section .testimonials .testimonial{
-        height: 275px;
+        height: 210px;
     }
 
     .testimonials_section .testimonials .testimonial p{
-        margin-right: 10px;
-        margin-left: 10px;
+        margin: 15px;
     }
 
     .testimonials_section .testimonials .testimonial .sub_section{
-        margin-right: 10px;
-        margin-left: 10px;
+        margin: 15px;
+    }
+
+    .testimonials_section .testimonials .testimonial .sub_section button{
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+
+    .testimonials_section .testimonials .testimonial .sub_section .details img{
+        width: 45px;
+        height: 45px;
+    }
+
+    .testimonials_section .testimonials .testimonial .sub_section .details span{
+        font-size: 14px;
     }
 
     .pricing_section .pricing_container .status .features button{
@@ -2285,18 +2386,31 @@ body{
     .courses_section .courses .course img{
         height: 35%;
     }
+    /* ___________________________ testimonials ____________________________ */
 
-    .testimonials_section .testimonials .testimonial .sub_section .details span{
-        font-size: 14px;
-    }
-
-    .testimonials_section .testimonials .testimonial .sub_section button{
-        padding: 10px;
+    .testimonials_section .testimonials .testimonial{
+        height: 215px;
     }
 
     .testimonials_section h2{
         font-size: 34px;
     }
+
+    .testimonials_section .testimonials .testimonial .sub_section .details span{
+        font-size: 13px;
+    }
+
+    .testimonials_section .testimonials .testimonial .sub_section .details img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .testimonials_section .testimonials .testimonial .sub_section button{
+        padding: 12px 8px;
+        border-radius: 10px;
+    }
+
+    
 
     .pricing_section .pricing_container .status .features button {
         padding-top: 8px;
