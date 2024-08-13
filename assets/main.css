@@ -12,6 +12,11 @@ body{
 
 .header{
     background-color: #59595A;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
 }
 
 .header .container{
@@ -136,7 +141,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 120px;
 }
 
 .hero_section .container{
@@ -893,6 +898,7 @@ body{
     font-size: 18px;
     font-weight: 600;
     border: 2px solid #59595A;
+    cursor: pointer;
     transition: background-color 1s;
 }
 
@@ -924,6 +930,11 @@ body{
     gap: 30px;
 }
 
+.footer .container .left_container svg{
+    width: 55px;
+    height: 55px;
+}
+
 .footer .container .left_container nav{
     display: flex;
     flex-direction: column;
@@ -932,13 +943,23 @@ body{
 
 .footer .container .left_container nav .sub_container{
     display: flex;
-    gap: 10px;
+    gap: 15px;
     align-items: center;
 }
 
+.footer .container .left_container nav .sub_container svg{
+    width: 32px;
+    height: 32px;
+}
+
 .footer .container .left_container nav .sub_container a{
-    color: black;
     text-decoration: none;
+    font-size: 20px;
+}
+
+.footer .container .left_container nav .sub_container a:hover{
+    color: blueviolet;
+    transform: scale(1.1);
 }
 
 .footer .container .right_container{
@@ -954,18 +975,23 @@ body{
 }
 
 .footer .container .right_container .home h3{
-    font-size: 24px;
+    font-size: 28px;
 }
 
 .footer .container .right_container .home nav{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
 }
 
 .footer .container .right_container .home nav a{
-    color: #59595A;
     text-decoration: none;
+    font-size: 20px;
+}
+
+.footer .container .right_container .home nav a:hover{
+    color: blueviolet;
+    transform: scale(1.1);
 }
 
 .footer .container .right_container .about{
@@ -975,18 +1001,23 @@ body{
 }
 
 .footer .container .right_container .about h3{
-    font-size: 24px;
+    font-size: 28px;
 }
 
 .footer .container .right_container .about nav{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
 }
 
 .footer .container .right_container .about nav a{
-    color: #59595A;
+    font-size: 20px;
     text-decoration: none;
+}
+
+.footer .container .right_container .about nav a:hover{
+    color: blueviolet;
+    transform: scale(1.1);
 }
 
 .footer .container .right_container .profiles{
@@ -996,24 +1027,35 @@ body{
 }
 
 .footer .container .right_container .profiles h3{
-    font-size: 24px;
+    font-size: 28px;
 }
 
 .footer .container .right_container .profiles nav{
     display: flex;
-    gap: 20px;
+    gap: 15px;
     align-items: center;
 }
 
 .footer .container .right_container .profiles nav .icon{
-    background-color: pink;
-    width: 50px;
-    height: 50px;
-    padding: 10px;
+    background-color: rgb(252, 217, 174);
+    width: 55px;
+    height: 55px;
+    padding: 12px;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.footer .container .right_container .profiles nav .icon svg rect{
+    width: 100%;
+    height: 100%;
+}
+
+.footer .container .right_container .profiles nav .icon:hover{
+    background-color: orange;
+    transform: scale(1.2);
+    z-index: 1;
 }
 
 .footer hr{
@@ -1023,7 +1065,7 @@ body{
 
 .footer p{
     text-align: center;
-    color: #59595A;
+    font-size: 20px;
 }
 /* ############################################################################################# */
 /* ############################################################################################# */
@@ -1087,6 +1129,11 @@ body{
 
     .pricing_section .pricing_container .status h6{
         font-size: 50px;
+    }
+    /* ______________________________ footer _______________________________ */
+
+    .footer .container .right_container{
+        width: 55%;
     }
 }
 
@@ -1172,11 +1219,40 @@ body{
     .pricing_section .pricing_container .status{
         width: calc((100% - 20px) / 2);
     }
+    /* ______________________________ footer _______________________________ */
 
-    .footer .container .right_container{
-        display: flex;
-        width: 55%;
-        justify-content: space-between;
+    .footer .container .right_container .home h3{
+        font-size: 26px;
+    }
+
+    .footer .container .right_container .about h3 {
+        font-size: 26px;
+    }
+
+    .footer .container .right_container .profiles h3 {
+        font-size: 26px;
+    }
+
+    .footer .container .left_container nav .sub_container a{
+        font-size: 18px;
+    }
+
+    .footer .container .right_container .home nav a {
+        font-size: 18px;
+    }
+
+    .footer .container .right_container .about nav a {
+        font-size: 18px;
+    }
+
+    .footer .container .left_container svg {
+        width: 50px;
+        height: 50px;
+    }
+
+    .footer .container .right_container .profiles nav .icon{
+        width: 50px;
+        height: 50px;
     }
 }
 
@@ -1266,22 +1342,38 @@ body{
     .pricing_section .pricing_container .status .features .feature{
         width: 90%;
     }
+    /* ______________________________ footer _______________________________ */
+
+    .footer .container .right_container{
+        width: 60%;
+    }
 
     .footer .container .right_container .home h3{
-        font-size: 22px;
+        font-size: 24px;
     }
 
     .footer .container .right_container .about h3{
-        font-size: 22px;
+        font-size: 24px;
     }
 
     .footer .container .right_container .profiles h3{
-        font-size: 22px;
+        font-size: 24px;
     }
 
-    .footer .container .right_container .profiles nav .icon{
-        width: 45px;
-        height: 45px;
+    .footer .container .left_container nav .sub_container a{
+        font-size: 16px;
+    }
+
+    .footer .container .right_container .home nav a{
+        font-size: 16px;
+    }
+
+    .footer .container .right_container .about nav a{
+        font-size: 16px;
+    }
+
+    .footer p{
+        font-size: 18px;
     }
 }
 
@@ -1387,21 +1479,36 @@ body{
     .pricing_section .pricing_container .status .features h5{
         font-size: 22px;
     }
+    /* ______________________________ footer _______________________________ */
 
     .footer .container .right_container .home h3{
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .footer .container .right_container .about h3{
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .footer .container .right_container .profiles h3{
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .footer .container .right_container .profiles nav{
         gap: 10px;
+    }
+
+    .footer .container .left_container svg{
+        width: 45px;
+        height: 45px;
+    }
+
+    .footer .container .right_container .profiles nav .icon{
+        width: 45px;
+        height: 45px;
+    }
+
+    .footer p{
+        font-size: 16px;
     }
 }
 
@@ -1451,17 +1558,18 @@ body{
         padding-top: 15px;
         padding-bottom: 15px;
     }
+    /* ______________________________ footer _______________________________ */
 
     .footer .container .right_container .home h3{
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .footer .container .right_container .about h3{
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .footer .container .right_container .profiles h3{
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .footer .container .right_container .profiles nav{
@@ -1480,6 +1588,10 @@ body{
         width: 40px;
         height: 40px;
         padding: 8px;
+    }
+
+    .footer .container .left_container nav .sub_container{
+        gap: 10px;
     }
 }
 
@@ -1613,27 +1725,22 @@ body{
         padding-top: 12px;
         padding-bottom: 12px;
     }
+    /* ______________________________ footer _______________________________ */
 
     .footer .container .right_container .home h3{
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .footer .container .right_container .about h3{
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .footer .container .right_container .profiles h3{
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .footer .container .right_container .profiles nav{
         gap: 5px;
-    }
-
-    .footer .container .right_container .profiles nav .icon{
-        width: 35px;
-        height: 35px;
-        padding: 6px;
     }
 
     .footer .container .left_container nav .sub_container a{
@@ -1642,6 +1749,10 @@ body{
 
     .footer{
         padding: 30px;
+    }
+
+    .footer p{
+        font-size: 16px;
     }
 }
 
@@ -1723,13 +1834,14 @@ body{
     .pricing_section .container p {
         width: 100%;
     }
-
-    .footer .container .right_container{
-        width: 60%;
-    }
+    /* ______________________________ footer _______________________________ */
 
     .footer .container .left_container nav .sub_container{
         gap: 7px;
+    }
+
+    .footer p{
+        font-size: 14px;
     }
 }
 
@@ -1836,13 +1948,10 @@ body{
     .pricing_section .pricing_container .status h4{
         font-size: 20px;
     }
+    /* ______________________________ footer _______________________________ */
 
     .footer{
         padding: 15px;
-    }
-
-    .footer p{
-        font-size: 14px;
     }
 }
 
@@ -1934,6 +2043,7 @@ body{
         padding-left: 16px;
         padding-right: 16px;
     }
+    /* ______________________________ footer _______________________________ */
 
     .footer .container{
         flex-wrap: wrap;
@@ -1993,7 +2103,7 @@ body{
     }
 
     .footer{
-        padding: 50px;
+        padding: 40px;
     }
 }
 
@@ -2112,7 +2222,7 @@ body{
     }
 
     .footer{
-        padding: 40px;
+        padding: 30px;
     }
 }
 
@@ -2160,9 +2270,10 @@ body{
         padding-left: 12px;
         padding-right: 12px;
     }
+    /* ______________________________ footer _______________________________ */
 
     .footer{
-        padding: 30px;
+        padding: 25px;
     }
 
     .footer .container .right_container .home h3{
@@ -2179,6 +2290,11 @@ body{
 
     .footer p{
         font-size: 14px;
+    }
+
+    .footer .container .right_container .profiles nav .icon{
+        width: 45px;
+        height: 45px;
     }
 }
 
@@ -2299,6 +2415,7 @@ body{
     .pricing_section .pricing_container .status{
         height: 850px;
     }
+    /* ______________________________ footer _______________________________ */
 
     .footer .container .right_container .home nav a{
         font-size: 14px;
@@ -2318,6 +2435,15 @@ body{
 
     .footer .container .right_container .profiles h3{
         font-size: 20px;
+    }
+
+    .footer .container .left_container nav .sub_container svg{
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer .container .left_container nav .sub_container a{
+        font-size: 14px;
     }
 }
 
@@ -2458,6 +2584,7 @@ body{
         width: 38px;
         height: 38px;
     }
+    /* ______________________________ footer _______________________________ */
 
     .footer .container .right_container .home h3{
         font-size: 18px;
@@ -2472,13 +2599,8 @@ body{
     }
 
     .footer .container .right_container .profiles nav .icon{
-        width: 45px;
-        height: 45px;
-        padding: 8px;
-    }
-
-    .footer .container .left_container nav .sub_container a{
-        font-size: 14px;
+        width: 43px;
+        height: 43px;
     }
 }
 
@@ -2559,8 +2681,13 @@ body{
     .pricing_section .pricing_container .status .features button{
         font-size: 14px;
     }
+    /* ______________________________ footer _______________________________ */
 
     .footer{
-        padding: 20px;
+        padding: 10px;
+    }
+
+    .footer p{
+        font-size: 13px;
     }
 }
